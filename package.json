@@ -1,0 +1,28 @@
+{
+  "name": "twitter_map_draft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {   
+    "start": "node app.js", 
+    "test": "echo \"Error: no test specified\" && exit 1",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Angiezhao/twitter-monitor.git"
+  },
+  "author": "Anqi Zhao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Angiezhao/twitter-monitor/issues"
+  },
+  "homepage": "https://github.com/Angiezhao/twitter-monitor#readme",
+  "dependencies": {
+    "chart.js": "^2.2.1",
+    "elasticsearch": "^11.0.1",
+    "express": "^4.13.4"
+  },
+  "engines": {
+    "node": "4.0.0"
+  }
+}

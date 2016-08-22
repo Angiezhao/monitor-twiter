@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #map-simple { min-height: 240px; }
+    </style>
+
+    <title>534 Roosevelt Street</title>
+</head>
+<body class="external">
+
+<div id="item-detail" class="content-container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="inner">
+                <div class="items-switch">
+                    <a href="#" class=""><img src="static/img/arrow-left.png"></a>
+                    <a href="#" class=""><img src="static/img/arrow-right.png"></a>
+                </div>
+                <!-- <article class="animate move_from_bottom_short">
+                    <div class="gallery">
+                        <div class="image">
+                            <img src="static/img/items/1_b.jpg" alt="">
+                        </div>
+                    </div>
+                </article> -->
+                <article class="animate move_from_bottom_short">
+                    <h1 id="hashtags">Hashtag XXX</h1>
+                    <h2>
+                        <i class="fa fa-map-marker"></i><a id="placeID">San Francisco</a>
+                        <figure class="price average-color">Numbers of Tweets: <span id="frequency">25.000</span></figure>
+                    </h2>
+                </article>
+                <!--end Description-->
+               
+                <article class="animate move_from_bottom_short">
+                    <h3>KeyWords</h3>
+                    <ul class="bullets">
+                        <li>Keywords XXX</li>
+                        <li>Keywords XXX</li>
+                        <li>Keywords XXX</li>
+                        <li>Keywords XXX</li>
+                        <li>Keywords XXX</li>
+                        <li>Keywords XXX</li>
+                        <li>Keywords XXX</li>
+                        <li>Keywords XXX</li>
+                        <li>Keywords XXX</li>
+                    </ul>
+                </article>
+                <!--end Features-->
+                <article>
+                    <h3>Map</h3>
+                    <div id="map-simple"></div>
+                </article>
+                <!--end Map-->
+            </div>
+        </div>
+        <!--end .col-md-6-->
+        <div class="col-md-6">
+            <div id="tweetList">Tweet list</div>
+            <article class="center" id="test">
+                <a href="#" class="btn btn-rectangle btn-default btn-lg">Loading more</a>
+            </article>
+        </div>
+    </div>
+    <!--end .row-->
+</div>
+<!--end #item-detail-->
+
+<script>
+    var _latitude = 51.541599;
+    var _longitude = -0.112588;
+    var draggableMarker = false;
+    var scrollwheel = true;
+    var element = document.querySelector('body');
+
+    if( hasClass(element, 'external') ){
+        var head = document.getElementsByTagName('head')[0];
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = "../../js/external.js";
+        head.appendChild(script);
+    }
+    else {
+        simpleMap(_latitude, _longitude,draggableMarker, scrollwheel);
+        rating();
+        averageColor( $('.content-container') );
+    }
+
+    function hasClass(element, cls) {
+        return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+    }
+
+</script>
+
+
+</body>
+</html>

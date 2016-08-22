@@ -1,0 +1,196 @@
+/*
+ * Base structure
+ */
+body {
+    position: relative;
+    min-height: 100%;
+}
+a, button, input, textarea {
+    outline: 0;
+}
+ul, ol {
+    padding-left: 25px;
+}
+/*page*/
+/*.page-container {
+    position: relative;
+}*/
+.allside{
+    /*height: calc(100%px);*/
+
+}
+.leftside{
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+}
+.rightside{
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+}
+
+/******
+    Event Content
+********/
+.content-wrapper {
+    width: 100%;
+}
+
+.content {
+    padding: 10px 10px 10px 10px;
+}
+
+/*Bar*/
+#topBar{
+    min-width:300px;
+    /*min-height:1000px;*/
+}
+.chartRow{
+    /*border: #778899;*/
+    background: white;
+
+    margin-top: 2px;
+}
+.bar{
+    fill: #B0E0E6;
+    /*opacity: 0.5;*/
+}
+.nyBar {
+    min-height: 30px;
+}
+
+text.label{
+    fill: #777777;
+    color: #777777;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px black;
+    font-family: "Roboto","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+text.category{
+    fill: #666666;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Roboto","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+/*tweetList CSS*/
+#tweetList {
+  height: calc(100vh - 150px);
+   /*min-height: 910px;*/
+}
+.userImg{
+    display: block;
+    height: 100px;
+    float: left;
+}
+.twPanel{
+    display: block;
+    fill: white;
+    padding: 10px;
+    margin: 0 10px 10px 10px;
+    color: 333;
+}
+.tweetContent{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.tweetTitle{
+  display: block;
+  padding-left: 15px;
+}
+.twPanel .tweetTitle .userName{
+    display: inline-block;
+    color: #060606;
+    float:left;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Roboto","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+.twPanel .tweetTitle .place{
+    display: inline-block;
+    color: #BABABA;
+    float: right;
+    font-size: 14px;
+    font-family: "Roboto","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+.textPanel{
+    display: block;
+    padding-left: 25px;
+}
+.textPanel .tweetText{
+    color: #999;
+    font-size: 16px;
+    font-family: "Roboto","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+.tweetText em{
+    color: #1E90FF;
+    font-weight: bolder;
+}
+
+/*Map*/
+#tileMap { 
+    min-width: 66%;
+    height: calc(100vh - 150px);
+    /*min-height: 1000px; */
+}
+
+/* css to customize Leaflet default styles  */
+.custom .leaflet-popup-content-wrapper {
+  background: #00BFFF;
+  color: #ffffff;
+  background opacity: 0.5;
+  font-size:14px;
+  line-height:20px;
+}
+.custom .leaflet-popup-content-wrapper a {
+  color:rgba(255,255,255,0.5);
+}
+
+
+
+@media(min-width: 769px){
+  .page-container {
+      padding-left: 20px;
+      width: 100%;
+      display: table;
+      table-layout: fixed;
+  }
+  .page-content {
+      display: table-row;
+  }
+  .sidebar {
+      display: table-cell;
+      vertical-align: top;
+      width: 260px;
+      margin-right: 15px;
+  }
+  .content-wrapper {
+      display: table-cell;
+      vertical-align: top;
+  }
+  .navbar {
+      padding-right: 20px;
+  }
+  .navbar-header {
+      margin-left: -20px;
+      background-color: #fff;
+  }
+  .navbar-nav {
+      margin-left: 20px;
+  }
+  .navbar-collapse {
+      text-align: left;
+      margin-left: -20px;
+  }
+  .navbar-text {
+      padding-right: 0;
+  }
+} 
+
+
+
+
+
+
